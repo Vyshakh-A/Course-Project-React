@@ -1,0 +1,39 @@
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  padding: 20px;
+}
+
+/* Button design for course cards */
+.course-card-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s, color 0.3s, transform 0.2s;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.course-card-btn:hover,
+.course-card-btn:focus {
+  border-color: #646cff;
+  background-color: #535bf2;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
+}
+
+.course-card-btn:active {
+  color: #646cff;
+  background-color: #fff;
+  border-color: #646cff;
+}

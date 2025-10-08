@@ -1,0 +1,100 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global link design */
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+/* Global card design */
+.card {
+  max-width: 250px;
+  min-height: 400px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb; /* light gray border */
+  border-radius: 1rem; /* 16px rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover / interactive effect */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: #646cff; /* highlight with primary */
+}
+
+/* Focus state (keyboard / accessibility) */
+.card:focus-within {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.4),
+              0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Card header */
+.card h2, .card h3 {
+  margin-top: 0;
+  color: #111827; /* dark neutral text */
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Card text */
+.card p {
+  color: #374151; /* neutral gray text */
+  line-height: 1.5;
+}
+
+/* Optional action button inside card */
+.card .action {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #646cff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card .action:hover {
+  text-decoration: underline;
+}
+
+a,
+button {
+  /* Example global styles for all anchor and button elements */
+  font-family: inherit;
+  font-size: 1em;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+/* Optional: focus state for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
