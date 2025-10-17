@@ -1,6 +1,6 @@
 import python from "../assets/python.jpg";
 import react from "../assets/react.jpg";
-import dsa from "../assets/dsa.png"; // check if it's .jpg or .png
+import dsa from "../assets/dsa.png"; 
 import uiux from "../assets/uiux.png";
 import ml from "../assets/ml.png";
 import fullstack from "../assets/fullstack.png";
