@@ -1,16 +1,32 @@
 import React from "react";
-import "./CourseCard.module.css";
+import { useNavigate } from "react-router-dom";
+import style from "./CourseCard.module.css";
+
 const CourseCard = (course) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/course/${course.id}`);
+  };
+
   return (
     <>
-      <div className="course-card card">
-        <div>
+      <div className={style.courseCard} onClick={handleClick}>
+        <div className={style.courseCardImage}>
           <img src={course.image} alt="Course_Image" />
         </div>
-        <div>
+        <div className={style.courseCardContent}>
           <h2>{course.title}</h2>
-          <p>{course.description}</p>
-          <button className="course-card-btn" onClick={course.link}>Enroll Now</button>
+          <p>
+            <span className={style.label}>Skills you'll gain:</span>{" "}
+            {course.skills}
+          </p>
+          <p>
+            ⭐ {course.rating} • {course.reviews} reviews
+          </p>
+          <p>
+            {course.level} • {course.certificate} • {course.duration}
+          </p>
         </div>
       </div>
     </>
